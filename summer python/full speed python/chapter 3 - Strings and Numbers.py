@@ -57,6 +57,8 @@ print(x[1:4:2])
 print(x[1:]) #from index 1 till very end
 print(x[1:-1]) #from index 1 till very end -1 index
 
+#btw slicing also works with lists
+
 #QUESTIONS
 
 #Exercises with numbers
