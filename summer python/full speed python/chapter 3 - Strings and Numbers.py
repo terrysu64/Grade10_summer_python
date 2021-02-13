@@ -51,6 +51,12 @@ print()
 print(c*5)
 print()
 
+#string[start:end:step] (index)
+#examples:
+print(x[1:4:2])
+print(x[1:]) #from index 1 till very end
+print(x[1:-1]) #from index 1 till very end -1 index
+
 #QUESTIONS
 
 #Exercises with numbers
