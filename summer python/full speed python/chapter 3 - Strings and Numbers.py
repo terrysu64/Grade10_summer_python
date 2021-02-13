@@ -26,6 +26,7 @@ print(type(c))
 print()
 
 #booleans are either True or False (extra)
+#values besides 0 and '' are considered True by default
 print('Booleans')
 d = True
 print(type(d))
