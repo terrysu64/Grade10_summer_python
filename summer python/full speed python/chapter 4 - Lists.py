@@ -45,6 +45,12 @@ print('Range converted into a list')
 print(list(range(20)))
 print()
 
+#a way of acessing both index and value of a list at once is to use enumerate()
+print('Enumerater function')
+for i,v in enumerate(List1):
+    print(i,v)
+print('\n')
+
 #QUESTIONS
 
 #Exercises with lists
