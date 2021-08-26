@@ -21,6 +21,7 @@ LabelMessage.set(value = 'Marble Game')
 MarbleCount = 31
 
 PlayerCount = 0
+Done = False
 
 Computer = 0
 
@@ -50,11 +51,6 @@ def how():
     print()
     print('Enjoy!')
 
-def Credits():
-    print()
-    print('ALL RIGHTS RESERVED')
-    print('TERRY SU 2020')
-
 #take button
 
 def take():
@@ -62,6 +58,9 @@ def take():
     global MarbleCount
     global PlayerCount
     global Computer
+    global Done
+
+    print(MarbleList)
 
     if int(MarbleNumber.get()) < 1 or int(MarbleNumber.get()) > 4:
         messagebox.showerror('Error', 'YOU MAY ONLY TAKE 1-4 MARBLES')
@@ -102,10 +101,14 @@ def take():
         LabelMessage.set(str(MarbleCount) + ' marbles left!')
 
     if MarbleCount <= 0:
+        if Done:
+            reset()
         if PlayerCount % 2 == 0:
             LabelMessage.set('PLAYER 1 WINS!')
         elif PlayerCount % 2 != 0:
             LabelMessage.set('PLAYER 2 WINS!')
+        Done = True
+
 
 #reset button
             
@@ -114,6 +117,9 @@ def reset():
     global MarbleList
     global MarbleCount
     global PlayerCount
+    global Done
+
+    Done = False
 
     LabelMessage.set('Marble Game')
 
