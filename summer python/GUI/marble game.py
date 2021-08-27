@@ -1,6 +1,6 @@
 #Name: Terry Su
 #Date: August 11, 2020
-#Purpose: GUI FINAL PROJECT - Marble Game
+#Purpose: GUI Marble Game
 
 #INITIALIZE
 
